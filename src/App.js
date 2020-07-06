@@ -1,12 +1,11 @@
 import React from 'react';
 
-
+import Home from './views/Home'
 
 function App() {
   return (
     <div>
-      <h1>Comenzemos</h1>
-      {/* la dependencia de react-boostrap ya esta instalada  */}
+        <Home></Home>
     </div>
   );
 }
