@@ -1,3 +1,4 @@
+/* Estilos del header */
 .navbar{
    background: black  ;
    padding: 10px;
@@ -16,6 +17,8 @@
 .navbar-light .navbar-nav .nav-link:hover {
     color: white;
 }
+/* ///////////// */
+/* Estilos del Menu */
 .nav{
     display: flex;
     justify-content: center;
@@ -103,6 +106,20 @@
     height: 10px;
 }
 
+@media screen and (min-width:481px){
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards__card{
+        width: 70%;
+    }
+    .nav__toggle{
+        display: flex;
+        right: 0;
+    }
+}
 @media screen and (min-width:768px){
     .nav{
         display: flex;
@@ -112,10 +129,14 @@
     .cards__card{
         width: 100%;
     }
+    .nav__toggle{
+        display: flex;
+        right: 0;
+    }
 }
 
 @media screen and (min-width:1200px){
     body{
-        background: blue;
+        
     }
 }

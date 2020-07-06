@@ -14,7 +14,7 @@ const Header = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" >
-                <Nav className="ml-auto ">
+                <Nav className="ml-auto nav__toggle">
                     <Nav.Link>
                         <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2 navbar__search" />

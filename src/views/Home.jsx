@@ -37,9 +37,9 @@ const  Home = () => {
             />
             </Carousel.Item>
         </Carousel>
-        <Container className="cards">
+        <Container className="cards" >
             <h1 className="cards_title">Categorias</h1>
-            <Row >
+            <Row>
                 <Col xs={12} sm={4} md={4} lg={4}>
                     <Card className="cards__card">
                         <Card.Img  src={zapatilla}/>
