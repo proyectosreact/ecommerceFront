@@ -7,8 +7,8 @@ import Col from 'react-bootstrap/Col'
 import slide from '../assets/img/slide.png'
 import zapatilla from '../assets/img/zapatilla.png'
 import '../assets/css/main.css'
-import Header from '../components/Header/Header'
-import Menu from '../components/Nav/Nav'
+import Header from '../Components/Header/Header'
+import Menu from '../Components/Nav/Nav'
 const  Home = () => {
     return ( 
         <>

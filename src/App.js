@@ -10,12 +10,14 @@ import Category from './views/Category'
 
 function App() {
   return (
+
       <Router>
         <Switch>
           <Route exact path="/"><Home></Home></Route>
           <Route path="/category"><Category></Category></Route>
         </Switch>
       </Router>
+
   );
 }
 
