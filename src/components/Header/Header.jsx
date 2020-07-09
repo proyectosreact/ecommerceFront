@@ -8,6 +8,7 @@ import Image from 'react-bootstrap/Image'
 const Header = () => {
     return ( 
         <>
+        <header>
         <Navbar collapseOnSelect expand="lg" className="navbar">
             <Navbar.Brand href="#home">
                 <Image src={logo} className="navbar__image"></Image>
@@ -29,6 +30,7 @@ const Header = () => {
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
+        </header>
         </>
      );
 }

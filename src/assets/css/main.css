@@ -17,24 +17,6 @@
 .navbar-light .navbar-nav .nav-link:hover {
     color: white;
 }
-/* ///////////// */
-/* Estilos del Menu */
-.nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav__link{
-    font-size: 14px;
-    color: #858585;
-    margin: 0;
-}
-.nav__link:hover{
-    font-size: 14px;
-    background: #18CE94;
-    color: white;
-    margin: 0;
-}
 .navbar__search{
     width: 85%;
     margin-right: 20px;
@@ -70,12 +52,32 @@
     background: black;
     border: 0;
 }
+/* ///////////// */
+/* Estilos del Menu */
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__link{
+    font-size: 14px;
+    color: #858585;
+    margin: 0;
+}
+.nav__link:hover{
+    font-size: 14px;
+    background: #18CE94;
+    color: white;
+    margin: 0;
+}
+/* //////////////////////// */
+/* Esitlos de los cards */
 .cards{
     width: 100%;
     padding: 20px;
     
 }
-.cards_title{
+.cards__title{
     text-align: center;
     font-size: 20px;
 }
@@ -106,6 +108,20 @@
     height: 10px;
 }
 
+.filter{
+    display: none;
+}
+.filtermobile{
+    border: 1px solid red;
+    margin: 10px;
+}
+.filtermobile__button{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px auto;
+}
+
+/* Medidas */
 @media screen and (min-width:481px){
     .nav{
         display: flex;
@@ -134,7 +150,17 @@
         right: 0;
     }
 }
-
+@media screen and (min-width:1024px){
+    body{
+        
+    }
+    .filter{
+        display: flex;
+    }
+    .filtermobile{
+        display: none;
+    }
+}
 @media screen and (min-width:1200px){
     body{
         
