@@ -12,7 +12,6 @@ import Filtrar from '../Components/Filtrar/Filtrar'
 
 
 const Category = () => {
-
   return (
     <>
       <Header></Header>
@@ -53,6 +52,7 @@ const Category = () => {
                   </Dropdown.Item>
                 </DropdownButton>
               </Col>
+
             </Row>
           </Container>
 
