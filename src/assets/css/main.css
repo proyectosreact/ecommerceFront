@@ -166,3 +166,103 @@
         
     }
 }
+
+/* //////////////////////// */
+/* Esitlos de Productos */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+h2{
+    margin-top: 1.5em;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+.Gris{
+    color: #858585;
+}
+.Adidas{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+.margin_foto{
+    margin-right: 3em;
+}
+
+.Azul{
+    color: #18CE94;
+    position: relative;
+    width: 99px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+.SKU{
+    margin-top: 35px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #858585;
+    margin-bottom: 1px;
+}
+
+.Lorem-class{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #C4C4C4;
+}
+.product_button_mas{
+    width: 40px;
+    height: 40px;
+    left: 781px;
+    top: 602px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 13px 0px 0px 13px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+}
+.product_button_iconmas{
+    width: 11px;
+    height: 28px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #858585;
+}
+
+.product_button_menos{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 13px 0px 0px 13px;
+}
+.product_button_iconmenos{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #858585;
+    width: 11px;
+    height: 28px;
+}
+.product_imput{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 0px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
