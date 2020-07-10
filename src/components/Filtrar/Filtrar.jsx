@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Row, Col} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import Input1 from './Input1'
 import "../../assets/css/Filter.css";
 
@@ -27,10 +27,7 @@ const Filtrar = () => {
     }
 
     return (
-        <Container className="c_filter">
-          <Row>
-            <Col xs={12} sm={4} md={4} lg={4}></Col>
-          </Row>
+        <Container className="filtrar">
             <Input1 input1={input01}/>
             <Input1 input1={input02}/>
             <Input1 input1={input03}/>

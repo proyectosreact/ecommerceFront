@@ -1,76 +1,76 @@
-.c_filter {
+.filtrar {
   position: absolute;
   width: 226px;
   height: 631px;
   margin: 50px 0;
   left: 58px;
-  top: 393px;
   padding: 25px;
   background: #ffffff;
   box-shadow: 0px 10px 20px #dcd9fa;
   border-radius: 15px;
   flex-direction: row;
 }
-.c_filter h3 {
+.input__title {
   margin: 0;
   font-family: "Raleway", sans-serif;
 }
 
-.cads_row {
-  display: flex;
-}
-.input-a {
-  align-items: center;
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-}
-.input-check {
+.filtrar__input-checkbox{
   opacity: 0;
   position: relative;
   left: 14px;
   cursor: pointer;
 }
 
-.input-a h3 {
-  font-style: normal;
+.subInput > .input__title{
+  font-size: 14px;
+  line-height: 16px;
+}
+.principalInput > .input__title{
+    font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
 }
+
 .checked-color-h3 {
   color: #c4c4c4;
   /* color: #18ce94; */
 }
 
-.custom-radio-checkbox {
+.input__custom {
   background-image: url("../img/input1.png");
   display: inline-block;
   margin-right: 0.5rem;
   background-size: cover;
 }
-.w-h22 {
+.principalInput > .input__custom {
   width: 22px;
   height: 22px;
 }
-.w-h15 {
+.subInput > .input__custom {
   width: 15px;
   height: 15px;
 }
 
-.input-check:checked + .custom-radio-checkbox {
+.filtrar__input-checkbox:checked + .custom-radio-checkbox {
   background-image: url("../img/input2.png");
 }
-.subsInput-Container {
+.filtrar__subInputs {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.subsInput-Container h3 {
+.filtrar__principalInput {
+  margin: 0;
+  padding: 0;
+}
+.filtrar__subInputs > .input__title {
 
   font-size: 14px;
   line-height: 16px;
 }
-.sub-input {
+.filtrar__subInputs > .subInput {
   margin: 14px 0;
 }
+

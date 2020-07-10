@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 // import producto from "../assets/img/producto.png";
-import Filtrar from './Filtrar/Filtrar'
+import Filtrar from '../Components/Filtrar/Filtrar'
 
 
 const Category = () => {
