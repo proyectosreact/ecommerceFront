@@ -38,10 +38,12 @@ const  Product  = () => {
             </Col>
             <Col>
             <p className="Lorem-class">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </Col>   
+            </Col>
+            <Container className="button_center">
             <button className="product_button_menos"> <p className="product_button_iconmenos" >-</p> </button>
                 <input className="product_imput" type="text"/>
             <button className="product_button_mas"> <p className="product_button_iconmas" >+</p> </button>
+            </Container> 
             </Media.Body>
         </Row>
     </Container>
