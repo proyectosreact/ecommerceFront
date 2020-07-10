@@ -1,7 +1,7 @@
 import React from 'react'
 import {Container} from "react-bootstrap";
-import Input1 from './Input1'
-import "../../assets/css/Filter.css";
+import Inputs from './Inputs'
+import "../../assets/css/main.css";
 
 const Filtrar = () => {
     const input01 ={
@@ -28,9 +28,9 @@ const Filtrar = () => {
 
     return (
         <Container className="filtrar">
-            <Input1 input1={input01}/>
-            <Input1 input1={input02}/>
-            <Input1 input1={input03}/>
+            <Inputs input={input01}/>
+            <Inputs input={input02}/>
+            <Inputs input={input03}/>
         </Container>
     )
 }
