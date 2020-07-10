@@ -27,6 +27,7 @@ const Input1 = ({ input }) => {
           <h3 className="input__title checked-color-h3">{input.title}</h3>
         </Row>
       </Container>
+      <h1>holaaaa</h1>
 
       <Container className="filtrar__subInputs">
         <Row className="subInput">
