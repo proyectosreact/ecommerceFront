@@ -20,16 +20,14 @@ const Header = () => {
                     <Nav.Link>
                         <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2 navbar__search" />
-                        <i class="gg-search"></i>
+                        <i className="gg-search"></i>
                         </Form>
                     </Nav.Link>
-                    <Nav.Link href="#deets" className="navbar__sign"><i class="gg-user"></i></Nav.Link>
-                    <Link to="/category" >
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Nav.Link>
-                    </Link>
-                    
+                    <Nav.Link href="#deets" className="navbar__sign"><i className="gg-user"></i></Nav.Link>
+                    <Nav.Link eventKey={2} href="#memes">
+                        Dank memes
+                    </Nav.Link>
+
                     <Nav.Link >More deets</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
