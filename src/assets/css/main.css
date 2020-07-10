@@ -120,6 +120,10 @@
     justify-content: flex-end;
     margin: 10px auto;
 }
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+
+    background: red;
+}
 
 /* Medidas */
 @media screen and (min-width:481px){
@@ -136,6 +140,7 @@
         right: 0;
     }
 }
+
 @media screen and (min-width:768px){
     .nav{
         display: flex;

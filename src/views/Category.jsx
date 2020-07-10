@@ -14,6 +14,11 @@ const Category = () => {
         <>
         <Header></Header>
         <Menu></Menu>
+        {/* filtro */}
+        <Container>
+            adsadsad
+        </Container>
+
         <Container >
             <Row lg={6} className="filter">
                 <Col>1 of asdsad1</Col>
