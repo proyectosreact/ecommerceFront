@@ -344,6 +344,9 @@ h2{
    .Adidas {
        margin-top: 10px;
    }
+   .Row_colum{
+       display: contents;
+   }
 }
 @media screen and (min-width:420px){
 .product_tittle{
@@ -373,6 +376,7 @@ h2{
     padding-left: 0px;
     padding-right: 0;
 }
+
 }
 .margin_foto {
     margin-left: auto;

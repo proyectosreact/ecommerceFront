@@ -14,7 +14,7 @@ const  Product  = () => {
     <Header></Header>
     <Menu></Menu>
     <Container>
-        <Row xs={1}>
+        <Row className="Row_colum">
         <h2 className="Gris product_tittle">Zapatillas Mujer</h2>
         <h2 className="color_product_tittle">/ Adidas Sport - Shakira</h2>
         </Row>
