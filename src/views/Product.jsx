@@ -14,15 +14,15 @@ const  Product  = () => {
     <Header></Header>
     <Menu></Menu>
     <Container>
-        <Row>
-        <h2 className="Gris">Zapatillas Mujer</h2>
-        <h2>/ Adidas Sport - Shakira</h2>
+        <Row xs={1}>
+        <h2 className="Gris product_tittle">Zapatillas Mujer</h2>
+        <h2 className="color_product_tittle">/ Adidas Sport - Shakira</h2>
         </Row>
     </Container>
 
     <Media>
-    <Container>
-        <Row xs={6} md={3}>
+    <Container className="container_center">
+        <Row xs={2} md={2} sm={2} className="containerP_margin">
             <Col className="margin_foto">
             <Image src={producto} rouded fluid/>
             </Col>
@@ -40,10 +40,14 @@ const  Product  = () => {
             <p className="Lorem-class">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </Col>
             <Container className="button_center">
-            <button className="product_button_menos"> <p className="product_button_iconmenos" >-</p> </button>
-                <input className="product_imput" type="text"/>
-            <button className="product_button_mas"> <p className="product_button_iconmas" >+</p> </button>
-            </Container> 
+                <button className="product_button_menos"> <p className="product_button_iconmenos" >-</p> </button>
+                    <input className="product_imput" type="text" value="1" />
+                <button className="product_button_mas"> <p className="product_button_iconmas" >+</p> </button>
+            </Container>
+            <Container className="button_center2">
+                <button className="button_addcart"> <p className="product_button_addcart_text">Agregar a Carrito</p> </button>
+            </Container>
+
             </Media.Body>
         </Row>
     </Container>

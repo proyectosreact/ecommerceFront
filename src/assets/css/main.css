@@ -188,14 +188,24 @@ h2{
     font-size: 24px;
     line-height: 28px;
 }
-.margin_foto{
-    margin-right: 3em;
+.product_tittle{
+    margin-left: 184px;
 }
+.containerP_margin{
+    margin-left: auto;
+    margin-right: auto;
+}
+.margin_foto{
+    margin-right: 68px;
+}
+*, ::after, ::before{
+        box-sizing: initial;
+}
+
 
 .Azul{
     color: #18CE94;
     position: relative;
-    width: 99px;
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -219,6 +229,7 @@ h2{
     font-size: 18px;
     line-height: 21px;
     color: #C4C4C4;
+    padding-left: 20px;
 }
 .product_button_mas{
     width: 40px;
@@ -229,6 +240,7 @@ h2{
     box-sizing: border-box;
     border-radius: 13px 0px 0px 13px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    background-color: #ffffff;
 
 
 }
@@ -248,6 +260,7 @@ h2{
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 13px 0px 0px 13px;
+    background-color: #ffffff;
 }
 .product_button_iconmenos{
     font-style: normal;
@@ -258,14 +271,172 @@ h2{
     width: 11px;
     height: 28px;
 }
+.button_center, .button_center2{
+    text-align: center;
+    margin-top: 30px;
+}
 .product_imput{
+    padding-bottom:5px;
     width: 40px;
     height: 40px;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 0px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-.button_center{
     text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #C4C4C4;
+
+}
+
+.button_center2{
+    margin-top: 30px;
+}
+
+.button_addcart{
+    background: #18CE94;
+    border-radius: 13px;
+    width: 181px;
+    height: 40px;
+}
+.product_button_addcart_text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    height: 16px;
+    padding: 10px;
+}
+@media screen and (min-width:220px){
+    .product_tittle{
+        text-align: center;
+        margin-left: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+   }
+   .container{
+       padding-left: 0px;
+   }
+   .color_product_tittle{
+       margin-right: auto;
+       margin-top: 5px;
+   }
+   h2{
+       font-size: 20px;
+       text-align: center;
+   }
+   .margin_foto {
+       margin-left: 100px;
+       margin-right: 100px;
+   }
+   .row-cols-2 > * {
+       max-width: 100%;
+   }
+   .col{
+       text-align: center;
+       margin-left: 0px;
+       padding-left: 0px;
+       padding-right: 0;
+   }
+   .Adidas {
+       margin-top: 10px;
+   }
+}
+@media screen and (min-width:420px){
+.product_tittle{
+     text-align: center;
+     margin-left: auto;
+}
+.container{
+    padding-left: 0px;
+}
+.color_product_tittle{
+    margin-right: auto;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+.margin_foto {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.row-cols-2 > * {
+    max-width: 100%;
+}
+.col{
+    text-align: center;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0;
+}
+}
+.margin_foto {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.Adidas {
+    margin-top: 10px;
+}
+
+@media screen and (min-width:578px){
+
+    .containerP_margin {
+        margin-left: 1px;
+    }
+    .product_tittle{
+        margin-left: 40px;
+
+    }
+    .margin_foto {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .Adidas{
+        font-size: 20px;
+    }
+
+}
+@media screen and (min-width:768px){
+    .containerP_margin{
+        margin-left: 50px;
+    }
+    .row-cols-md-2 > * {
+        max-width: 50%;
+    }
+    .margin_foto{
+        margin-right: 0px;
+    }
+    .product_tittle{
+        margin-left: 70px;
+    }
+    h2{
+        font-size: 24px;
+    }
+
+}
+@media screen and (min-width:992px){
+    .margin_foto{
+        margin-right: 0px;
+    }
+    .containerP_margin{
+        margin-left: 124px;
+    }
+    .row-cols-md-2 > * {
+        max-width: 40%;
+        padding: 20px;
+    }
+    .product_tittle{
+        margin-left: 124px;
+    }
+
 }
