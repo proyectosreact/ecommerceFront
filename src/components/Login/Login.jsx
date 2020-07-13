@@ -9,8 +9,8 @@ const Login = (props) => {
         <Container >
          <Row className="justify-content-md-center mb-3">
           <div className="nav-item">                 
-            <Button variant="outline-primary" size="lg"><Link to="/ingresar"></Link>Ingresar</Button>
-            <Button variant="outline-primary" size="lg"><Link to="/registrar"></Link>Registrar</Button>
+            <Button variant="outline-primary" size="lg"><Link to="/ingresar">Ingresar</Link></Button>
+            <Button variant="outline-primary" size="lg"><Link to="/registrar">Registrar</Link></Button>
            </div>
          </Row>
          <Row className="justify-content-md-center"> 
