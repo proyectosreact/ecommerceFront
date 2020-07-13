@@ -1,7 +1,18 @@
 /* Estilos del Login */
+.close{
+    display: flex;
+    justify-self: right;
+    margin: 1rem;
+    color: #dc3545;
+}
+
+
 .media{
     align-items: center;
     height: 41rem;
+}
+
+.ico-login{
 }
 
 .form-control {

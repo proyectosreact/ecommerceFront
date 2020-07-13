@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Login from '../components/Login/Login'
-import {Form, Button} from "react-bootstrap";
+import {Form, Button, Row} from "react-bootstrap";
 
 const Ingresar = (props) => {
     const [isLoading, setLoading] = useState(false);
@@ -42,7 +42,7 @@ const Ingresar = (props) => {
                 >
                 {isLoading ? 'Cargando…' : 'Iniciar seccion'}
                 </Button>
-                </Form>
+            </Form>
         </Login>
     )
 }
