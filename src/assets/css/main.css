@@ -310,6 +310,9 @@ h2{
     height: 16px;
     padding: 10px;
 }
+.Row_colum{
+    display: flex;
+}
 @media screen and (min-width:220px){
     .product_tittle{
         text-align: center;
@@ -376,6 +379,9 @@ h2{
     padding-left: 0px;
     padding-right: 0;
 }
+.Row_colum{
+    display: flex;
+}
 
 }
 .margin_foto {
@@ -404,7 +410,10 @@ h2{
         padding-right: 0;
         padding-left: 0;
     }
-    
+    .Row_colum{
+        display: flex;
+    }
+
     .Adidas{
         font-size: 20px;
     }
@@ -426,6 +435,9 @@ h2{
     h2{
         font-size: 24px;
     }
+    .Row_colum{
+        display: flex;
+    }
 
 }
 @media screen and (min-width:992px){
@@ -441,6 +453,9 @@ h2{
     }
     .product_tittle{
         margin-left: 124px;
+    }
+    .Row_colum{
+        display: flex;
     }
 
 }
