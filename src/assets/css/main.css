@@ -1,3 +1,32 @@
+/* Estilos del Login */
+.close{
+    display: flex;
+    justify-self: right;
+    margin: 1rem;
+    color: #dc3545;
+}
+
+
+.media{
+    align-items: center;
+    height: 41rem;
+}
+
+.ico-login{
+}
+
+.form-control {
+    min-width: 20rem;
+}
+
+.nav-item{
+    min-width: 20rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+}
+
 /* Estilos del header */
 .navbar{
    background: black  ;
