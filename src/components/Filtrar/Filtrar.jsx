@@ -1,9 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Container} from "react-bootstrap";
 import Inputs from './Inputs'
 import "../../assets/css/main.css";
 
 const Filtrar = () => {
+    const [category,Setcategory] = useState({
+        title:'',
+
+    })
+
     const input01 ={
         title : 'Moda mujeres',
         stitle1: 'Zapatillas',

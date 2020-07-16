@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../Components/Header/Header";
-import Menu from "../Components/Nav/Nav";
+import Header from "../components/Header/Header";
+import Menu from "../components/Nav/Nav";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 // import producto from "../assets/img/producto.png";
-import Filtrar from '../Components/Filtrar/Filtrar'
+import Filtrar from '../components/Filtrar/Filtrar'
 
 
 const Category = () => {

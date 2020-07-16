@@ -24,9 +24,12 @@ const Header = () => {
                         </Form>
                     </Nav.Link>
                     <Nav.Link href="#deets" className="navbar__sign"><i className="gg-user"></i></Nav.Link>
+                    <Link to="/product">
                     <Nav.Link eventKey={2} href="#memes">
                         Dank memes
                     </Nav.Link>
+                    </Link>
+                    
 
                     <Nav.Link >More deets</Nav.Link>
                 </Nav>

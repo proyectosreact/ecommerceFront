@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Carousel  from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
@@ -9,6 +9,8 @@ import zapatilla from '../assets/img/zapatilla.png'
 import '../assets/css/main.css'
 import Header from '../components/Header/Header'
 import Menu from '../components/Nav/Nav'
+
+
 const  Home = () => {
     return ( 
         <>
