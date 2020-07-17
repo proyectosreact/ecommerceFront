@@ -1,8 +1,9 @@
-import React from 'react';
-import Axios from 'axios'
+  
+import axios from 'axios'
 
-const  = Axios.create({
-    baseURL: 'https://some-domain.com/api/',
-    timeout: 1000,
-    headers: {'X-Custom-Header': 'foobar'}
-  });
+const Axios = axios.create({
+    baseURL : 'https://thawing-fortress-96804.herokuapp.com',
+    headers: {'Content-Type': 'application/json'}
+})
+
+export default Axios

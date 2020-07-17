@@ -6,7 +6,6 @@ import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import producto from '../assets/img/producto_cuadro.png'
-import "../assets/css/main.css";
 import Media from 'react-bootstrap/Media'
 const  Product  = () => {
     return ( 
@@ -19,7 +18,6 @@ const  Product  = () => {
         <h2>/ Adidas Sport - Shakira</h2>
         </Row>
     </Container>
-
     <Media>
     <Container>
         <Row xs={6} md={3}>

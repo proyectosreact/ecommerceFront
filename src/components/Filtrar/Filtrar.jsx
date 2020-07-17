@@ -1,43 +1,82 @@
-import React,{useState} from 'react'
-import {Container} from "react-bootstrap";
-import Inputs from './Inputs'
+
+import React, { useState, useEffect } from "react";
+import { Container } from "react-bootstrap";
+// import Inputs from "./Inputs";
+import Axios from '../../config/axios'
+
 import "../../assets/css/main.css";
+import "./CategoryLab.css";
 
 const Filtrar = () => {
-    const [category,Setcategory] = useState({
-        title:'',
 
-    })
+  const [categorias, setCategorias] = useState([]);
 
-    const input01 ={
-        title : 'Moda mujeres',
-        stitle1: 'Zapatillas',
-        stitle2: 'Polos',
-        stitle3: 'Buzos',
-        stitle4: 'Sudaderas',
-    }
-    const input02 ={
-        title : 'Moda hombres',
-        stitle1: 'Zapatillas',
-        stitle2: 'Polos',
-        stitle3: 'Buzos',
-        stitle4: 'Sudaderas',
-    }
-    const input03 ={
-        title : 'Accesorios',
-        stitle1: 'Relojes',
-        stitle2: 'Pulseras',
-        stitle3: 'Ligas',
-        stitle4: 'Guantes',
-    }
 
-    return (
-        <Container className="filtrar">
-            <Inputs input={input01}/>
-            <Inputs input={input02}/>
-            <Inputs input={input03}/>
-        </Container>
-    )
-}
+  useEffect(() => {
+    Axios.get('/api/category',categorias)
+      .then((res) => {
+        setCategorias(res.data.category);
+        console.log(res.data.category);
+        console.log(res.data.category[0].subCategorys[0].subCategory)
+        
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
-export default Filtrar
+
+  // const input01 = {
+  //   title: "Moda mujeres",
+  //   stitle1: "Zapatillas",
+  //   stitle2: "Polos",
+  //   stitle3: "Buzos",
+  //   stitle4: "Sudaderas",
+  //   inputName: "input1",
+  // };
+  // const input02 = {
+  //   title: "Moda hombres",
+  //   stitle1: "Zapatillas",
+  //   stitle2: "Polos",
+  //   stitle3: "Buzos",
+  //   stitle4: "Sudaderas",
+  //   inputName: "input2",
+  // };
+  // const input03 = {
+  //   title: "Accesorios",
+  //   stitle1: "Relojes",
+  //   stitle2: "Pulseras",
+  //   stitle3: "Ligas",
+  //   stitle4: "Guantes",
+  //   inputName: "input3",
+  // };
+
+  return (
+    <Container className="category">
+      {/* <Container className="filtrar">
+        <div>
+          <Inputs input={input01} />
+          <Inputs input={input02} />
+          <Inputs input={input03} />
+        </div>
+      </Container> */}
+      <Container className="categories">
+        <ul>
+          
+          {
+          categorias.map((categorias) => (
+              <li key={categorias.category}>
+                <h2 key={categorias.category}>{categorias.category}</h2> 
+                <h2 key={categorias.subCategorys}>{categorias.subCategorys[0].subCategory}</h2> 
+                {/* <h2 >{categorias.category.subCategorys.subCategory}</h2> */}
+              </li>
+          ))
+          }
+          
+        </ul>
+      </Container>
+    </Container>
+  );
+};
+
+export default Filtrar;
