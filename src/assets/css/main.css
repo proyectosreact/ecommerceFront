@@ -71,11 +71,21 @@
   color: white;
   margin: 0;
 }
+.nav__select{
+  font-size: 14px;
+  background: #18ce94;
+  color: white;
+  margin: 0;
+}
 /* //////////////////////// */
 /* Esitlos de los cards */
 .cards {
   width: 100%;
   padding: 20px;
+}
+.card a{
+  text-decoration: none;
+  color: #000000;
 }
 .cards__title {
   text-align: center;
@@ -97,6 +107,7 @@
 }
 .card-title {
   font-size: 16px;
+  margin: 0;
 }
 .cards__body:hover {
   background: #18ce94;
@@ -224,11 +235,13 @@
 .filtrar__subInput-radio:checked ~ .principalInput .input__custom {
   background-image: url("../img/input2.png");
 }
-
-/* .filtrar__principalInput {
-  margin: 0;
-  padding: 0;
-} */
+.category{
+  width: 100%;
+  display: flex;
+}
+.categories{
+  width: 50vw;
+}
 
 /*--------------------------------*/
 
