@@ -151,9 +151,7 @@
     }
 }
 @media screen and (min-width:1024px){
-    body{
-        
-    }
+
     .filter{
         display: flex;
     }
@@ -162,9 +160,7 @@
     }
 }
 @media screen and (min-width:1200px){
-    body{
-        
-    }
+
 }
 
 /* //////////////////////// */
@@ -179,10 +175,10 @@ h2{
     margin-bottom: 1em;
     font-weight: bold;
 }
-.Gris{
+.color_product_tittle_gris {
     color: #858585;
 }
-.Adidas{
+.product_name{
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -195,15 +191,15 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
-.margin_foto{
+.product_foto{
     margin-right: 68px;
 }
 *, ::after, ::before{
-        box-sizing: initial;
+    box-sizing: initial;
 }
 
 
-.Azul{
+.product_precio{
     color: #18CE94;
     position: relative;
     font-family: Raleway;
@@ -212,7 +208,7 @@ h2{
     font-size: 24px;
     line-height: 28px;
 }
-.SKU{
+.product_SKU{
     margin-top: 35px;
     font-family: Raleway;
     font-style: normal;
@@ -223,7 +219,7 @@ h2{
     margin-bottom: 1px;
 }
 
-.Lorem-class{
+.product_descripcion{
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -458,4 +454,126 @@ h2{
         display: flex;
     }
 
+}
+
+.cards__body{
+    color: black;
+}
+
+a:link
+{
+    text-decoration:none;
+} 
+
+
+/* //////////////////////// */
+/* Estilos de Admin Category */
+
+.title_categorias{
+    margin: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #000000;
+}
+.subtitle_agregarC{
+    margin-left: auto;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+    margin-right: 10px;
+}
+.input_agregarC{
+    width: 436px;
+    height: 37px;
+
+    border: 1px solid #858585;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button_agregar{
+    margin-right: auto;
+    margin-left: 10px;
+    width: 135px;
+    height: 35px;
+
+    background: #18CE94;
+    border-radius: 4px;
+
+
+}
+.button_agregarC_text{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+    margin: auto;
+}
+
+.category_table{
+    width: 960px;
+    height: 540px;
+    border: 1px solid #858585;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 20px;
+    padding-right: 0px;
+}
+
+.category_table_text{
+    z-index: 2;
+    position: absolute;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    margin: auto;
+    margin-top: 20px;
+    justify-items: center;
+    
+
+    color: #000000;
+}
+.desplegable_container{
+    padding-right: 0px;
+}
+.button_subcategoria{
+    Width: 140px;
+    height: 40px;
+    padding: 0px, 0px;
+
+    background: #18CE94;
+    border-radius: 4px
+    
+}
+.card_button_subcategoria_header{
+    text-align: right;
+    margin-right: 150px;
+    background-color: #FFFFFF;
+    border-bottom: #FFFFFF;
+}
+.button_subcategoria_borrar{
+    left: 750px;
+    top: -30px;
+    position: absolute;
+    width: 91px;
+    height: 40px;
+    z-index: 2;
+    background: #FF5C5C;
+    border-radius: 4px;
 }

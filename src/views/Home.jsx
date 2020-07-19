@@ -9,6 +9,13 @@ import zapatilla from '../assets/img/zapatilla.png'
 import '../assets/css/main.css'
 import Header from '../components/Header/Header'
 import Menu from '../components/Nav/Nav'
+import Nav from 'react-bootstrap/Nav'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+  } from "react-router-dom";
 const  Home = () => {
     return ( 
         <>
@@ -43,9 +50,11 @@ const  Home = () => {
                 <Col xs={12} sm={4} md={4} lg={4}>
                     <Card className="cards__card">
                         <Card.Img  src={zapatilla}/>
+                        <a href="/category" className="cards__body">
                         <Card.Body className="cards__body">
-                            <Card.Title>Moda Mujer</Card.Title>
+                            <Card.Title> Moda Mujer</Card.Title>
                         </Card.Body>
+                        </a>
                     </Card>
                 </Col>
                 <Col xs={12} sm={4} md={4} lg={4} >

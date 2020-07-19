@@ -42,11 +42,13 @@ const Category = () => {
                 
                 <Col md={12}><h1>Moda Mujer</h1></Col>
                 <Col xs={12} sm={4} md={4} lg={4} >
-                    <Card className="cards__card">
+                    <Card className="cards__card" href="/category">
                         <Card.Img  src={producto}/>
+                        <a href="/product">
                         <Card.Body className="cards__body">
                             <Card.Title>Moda Hombre</Card.Title>
                         </Card.Body>
+                        </a>
                     </Card>
                 </Col >
                 <Col xs={12} sm={4} md={4} lg={4}>
