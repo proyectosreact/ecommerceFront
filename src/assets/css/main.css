@@ -71,7 +71,7 @@
   color: white;
   margin: 0;
 }
-.nav__select{
+.nav__select {
   font-size: 14px;
   background: #18ce94;
   color: white;
@@ -83,7 +83,7 @@
   width: 100%;
   padding: 20px;
 }
-.card a{
+.card a {
   text-decoration: none;
   color: #000000;
 }
@@ -140,11 +140,9 @@
 /*------------------- FILTER ---------------------*/
 .filtrar {
   width: 226px;
-  height: 580px;
   margin: 50px 0;
   left: -28px;
   position: relative;
-  padding: 50px 32px 0px;
   background: #ffffff;
   box-shadow: 0px 10px 20px #dcd9fa;
   border-radius: 15px;
@@ -153,6 +151,10 @@
   display: flex;
   align-items: center;
   line-height: 0;
+}
+.filtrar__input {
+  position: relative;
+  margin: 47px 0;
 }
 .input__title {
   margin: 0;
@@ -183,7 +185,6 @@
 .principalInput {
   display: flex;
   align-items: center;
-  bottom: 170px;
   position: relative;
 }
 .principalInput > .input__title {
@@ -198,10 +199,8 @@
   height: 22px;
 }
 .filtrar__principalInput-radio {
-  position: relative;
   width: 135px;
   height: 21px;
-  bottom: 148px;
   right: 15px;
 }
 .subInput__custom {
@@ -220,26 +219,24 @@
   margin-right: 0.5rem;
   background-size: cover;
 }
-.filtrar__principalInput-radio:checked + .principalInput .input__custom {
-  background-image: url("../img/input2.png");
-}
+.filtrar__principalInput-radio:checked + .principalInput .input__custom,
 .filtrar__subInput-radio:checked + .subInput .input__custom {
   background-image: url("../img/input2.png");
 }
 .filtrar__principalInput-radio:checked + .principalInput .input__title {
   color: #18ce94;
 }
-.filtrar__subInput-radio:checked ~ .principalInput .input__title {
+.toggle__color {
   color: #18ce94;
 }
-.filtrar__subInput-radio:checked ~ .principalInput .input__custom {
+.toogle__inputCustom {
   background-image: url("../img/input2.png");
 }
-.category{
+.category {
   width: 100%;
   display: flex;
 }
-.categories{
+.categories {
   width: 50vw;
 }
 

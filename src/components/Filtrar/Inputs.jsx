@@ -1,63 +1,63 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Row } from "react-bootstrap";
+import Axios from "axios";
 
-const Input1 = ({ input }) => {
+const Input1 = () => {
+  // ------------ Get Categorys in Hooks ----------
+  const [categorias, setCategorias] = useState([]);
+  const [subcategorias, setsubCategorias] = useState([]);
+  // --------------Toggle className---------------
+  const [condition, setCondition] = React.useState(null);
+  // -----------------AXIOS get-------------------
+  useEffect(() => {
+    Axios.get("https://thawing-fortress-96804.herokuapp.com/api/category")
+      .then((res) => {
+        setCategorias(res.data.category);
+        setsubCategorias(res.data.category[0].subCategorys);
+        console.log("holaaa");
+        console.log(res.data.category[0]);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
-    <div>
-      {/*  PRINCIPAL INPUT */}
-      <input
-        type="radio"
-        name="input__name"
-        className="filtrar__subInput-radio"
-      />
-      <Row className="subInput">
-        <span className="subInput__custom input__custom"></span>
-        <label className="input__title">
-          {input.stitle1}
-        </label>
-      </Row>
-    {/*  SUB INPUTS */}
-      <input
-        type="radio"
-        name="input__name"
-        className="filtrar__subInput-radio"
-      />
-      <Row className="subInput">
-        <span className="subInput__custom input__custom"></span>
-        <label className="input__title">
-          {input.stitle2}
-        </label>
-      </Row>
-
-      <input
-        type="radio"
-        name="input__name"
-        className="filtrar__subInput-radio"
-      />
-      <Row className="subInput">
-        <span className="subInput__custom input__custom"></span>
-        <label className="input__title">{input.stitle3}</label>
-      </Row>
-
-      <input
-        type="radio"
-        name="input__name"
-        className="filtrar__subInput-radio"
-      />
-      <Row className="subInput">
-        <span className="subInput__custom input__custom"></span>
-        <h3 className="input__title">{input.stitle4}</h3>
-      </Row>
-      <input
-        type="radio"
-        name="input__name"
-        className="filtrar__principalInput-radio"
-      />
-      <Row className="principalInput">
-        <span className="principalInput__custom input__custom"></span>
-        <h3 className="input__title">{input.title}</h3>
-      </Row>
-    </div>
+    <>
+      <div className="filtrar__input">
+        {categorias.map((categorias) => (
+          <>
+            <input
+              type="radio"
+              name="input__name"
+              className="filtrar__principalInput-radio"
+            />
+            <Row className="principalInput">
+              <span className={`principalInput__custom input__custom ${condition === categorias.category ? "toogle__inputCustom" : ""}`}></span>
+              <label className={`input__title ${condition === categorias.category ? "toggle__color" : "hola"}`}>
+                {categorias.category}
+              </label>
+            </Row>
+            {subcategorias.map((subcategorias) => (
+              <>
+                <input
+                  type="radio"
+                  name="input__name"
+                  className="filtrar__subInput-radio"
+                  onClick={() => setCondition(categorias.category)}
+                />
+                <Row className="subInput">
+                  <span className="subInput__custom input__custom"></span>
+                  <label className="input__title">
+                    {subcategorias.subCategory}
+                  </label>
+                </Row>
+              </>
+            ))}
+          </>
+        ))}
+      </div>
+    </>
   );
 };
 

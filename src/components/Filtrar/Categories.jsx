@@ -24,16 +24,20 @@ const Categories = () => {
       ))}
     </ul>
   );
+
   const SubCategoryName = subcategorias.map((subCategoria) => (
     <div key={subCategoria.id}>
       <h3>{subCategoria.subCategory}</h3>
     </div>
   ));
+
+
   return (
     <div>
       {CategoryName}
       <hr />
       {SubCategoryName}
+
     </div>
   );
 };
