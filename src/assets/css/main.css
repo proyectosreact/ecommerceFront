@@ -566,9 +566,24 @@ a:link
     margin-right: 150px;
     background-color: #FFFFFF;
     border-bottom: #FFFFFF;
+
+}
+.card_button_subcategoria_body{
+    height: 300px;
 }
 .button_subcategoria_borrar{
     left: 750px;
+    top: -30px;
+    position: absolute;
+    width: 91px;
+    height: 40px;
+    z-index: 2;
+    background: #FF5C5C;
+    border-radius: 4px;
+}
+
+.button_product_borrar{
+    left: 700px;
     top: -30px;
     position: absolute;
     width: 91px;

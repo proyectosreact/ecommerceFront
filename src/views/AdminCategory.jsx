@@ -43,7 +43,7 @@ const  AdminCategory = () =>{
                 <Col md={9}>1 MODA HOMBRE</Col>
                 <Col md={{ span: 1, offsen:1 }}> <button className="button_subcategoria_borrar">BORRAR</button></Col>
             </Row>
-
+            {/* desplegable subcategoria */}
             <Container className="desplegable_container">
                 <Col> 
                     <Accordion>
@@ -54,18 +54,61 @@ const  AdminCategory = () =>{
                                 <Accordion.Collapse eventKey="0">
                                     <Card.Body> 
                                         <Container>
-                                            <Row>
-                                            <Col md={8}>1 MODA HOMBRE</Col>
-                                             <Col md={{ span: 1, offset: 1}}> </Col>
-                                            </Row>
+                                        <Row className="justify-content-center align-items-center">
+                                            <h5 className="subtitle_agregarC">AGREGAR SUBCATEGORIA</h5>
+                                            <input className="input_agregarC"></input> 
+                                            <button className="button_agregar">
+                                                <p className="button_agregarC_text">AGREGAR</p>
+                                            </button> 
+                                        </Row>
                                         </Container>
+                                        <Container>
+                                            <Row className="category_table_text justify-content-center">
+                                                <Col md={9}>1 ZAPATOS</Col>
+                                                <Col md={{ span: 1, offsen:1 }}> <button className="button_subcategoria_borrar">BORRAR</button></Col>
+                                            </Row>
+                                      {  /* desplegable product */ }
+                                        <Container className="desplegable_container">
+                                        <Col> 
+                                            <Accordion>
+                                                <Card className="card_button_subcategoria" >
+                                                    <Card.Header className="card_button_subcategoria_header" >
+                                                        <BotonDesplegar eventKey="0">PRODUCTOS</BotonDesplegar>
+                                                    </Card.Header>
+                                                        <Accordion.Collapse eventKey="0">
+                                                            <Card.Body className="card_button_subcategoria_body"> 
+                                                                <Container>
+                                                                <Row className="justify-content-center align-items-center">
+                                                                    <h5 className="subtitle_agregarC">AGREGAR PRODUCTOS</h5>
+                                                                    <input className="input_agregarC"></input> 
+                                                                    <button className="button_agregar">
+                                                                        <p className="button_agregarC_text">AGREGAR</p>
+                                                                    </button> 
+                                                                </Row>
+                                                                </Container>
+                                                                <Container>
+                                                                <Row className="category_table_text justify-content-center">
+                                                                    <Col md={9}>1 SHAKIRA NIKE</Col>
+                                                                    <Col md={{ span: 1, offsen:1 }}> <button className="button_product_borrar">BORRAR</button></Col>
+                                                                </Row>
+                                                                </Container>
+
+                                                            </Card.Body>
+
+                                                    </Accordion.Collapse>
+                                                </Card>
+                                            </Accordion>
+                                        </Col>
+                                </Container>
+                                        </Container>
+
                                      </Card.Body>
 
                             </Accordion.Collapse>
                         </Card>
                     </Accordion>
                 </Col>
-        </Container>
+            </Container>
         </Container>
 
         
