@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import Axios from '../../config/axios'
 
 import "../../assets/css/main.css";
-import "./CategoryLab.css";
+import "./CategoryLab.css"; 
 
 const Filtrar = () => {
 

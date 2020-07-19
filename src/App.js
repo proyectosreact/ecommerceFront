@@ -13,11 +13,9 @@ import Registrar from './views/Registrar';
 
 function App() {
   return (
-
-
       <Router>
         <Switch>
-          <Route exact path="/"><Home></Home></Route>
+          <Route exact path="/"><Home ></Home></Route>
           <Route path="/category"><Category></Category></Route>
           <Route path="/product"> <Product></Product> </Route>
           <Route path="/ingresar" component={Ingresar} />

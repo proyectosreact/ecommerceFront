@@ -10,10 +10,11 @@ import Header from '../components/Header/Header'
 import Menu from '../components/Nav/Nav'
 
 
-const  Home = () => {
+const  Home = ({email}) => {
+    // const[email,setEmail]=useState(this.props.location.state && this.props.location.state.referrer)
     return ( 
         <>
-        <Header></Header>
+        <Header ></Header>
         <Menu></Menu>
         <Carousel interval="2000" indicators={false}>
             <Carousel.Item>
@@ -39,7 +40,7 @@ const  Home = () => {
             </Carousel.Item>
         </Carousel>
         <Container className="cards">
-            <h1 className="cards__title">Categorias</h1>
+        <h1 className="cards__title">Categorias</h1>
             <Row>
                 <Col xs={12} sm={4} md={4} lg={4}>
                     <Card className="cards__card">
@@ -53,7 +54,7 @@ const  Home = () => {
                     <Card className="cards__card">
                         <Card.Img  src={zapatilla}/>
                         <Card.Body className="cards__body">
-                            <Card.Title>Moda Hombre</Card.Title>
+                            <Card.Title>{email}</Card.Title>
                         </Card.Body>
                     </Card>
                 </Col >
