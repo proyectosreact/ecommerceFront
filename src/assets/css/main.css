@@ -83,9 +83,14 @@
   width: 100%;
   padding: 20px;
 }
-.card a {
+a{
   text-decoration: none;
   color: #000000;
+}
+a:hover{
+  color: #000000;
+  text-decoration: none;
+  border: none;
 }
 .cards__title {
   text-align: center;
@@ -114,6 +119,7 @@
   color: white;
   border-radius: 0px 0px 10px 10px;
   cursor: pointer;
+  transition: 0.2s;
 }
 .cards__image {
   height: 10px;

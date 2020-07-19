@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Row } from "react-bootstrap";
 import Axios from "axios";
 
-const Input1 = () => {
+const Inputs = () => {
   // ------------ Get Categorys in Hooks ----------
   const [categorias, setCategorias] = useState([]);
   const [subcategorias, setsubCategorias] = useState([]);
@@ -14,7 +14,6 @@ const Input1 = () => {
       .then((res) => {
         setCategorias(res.data.category);
         setsubCategorias(res.data.category[0].subCategorys);
-        console.log("holaaa");
         console.log(res.data.category[0]);
       })
       .catch((err) => {
@@ -23,10 +22,10 @@ const Input1 = () => {
   }, []);
 
   return (
-    <>
+ 
       <div className="filtrar__input">
         {categorias.map((categorias) => (
-          <>
+          <div key={categorias.category}>
             <input
               type="radio"
               name="input__name"
@@ -39,7 +38,7 @@ const Input1 = () => {
               </label>
             </Row>
             {subcategorias.map((subcategorias) => (
-              <>
+              <div key={subcategorias._id}>
                 <input
                   type="radio"
                   name="input__name"
@@ -52,13 +51,13 @@ const Input1 = () => {
                     {subcategorias.subCategory}
                   </label>
                 </Row>
-              </>
+              </div>
             ))}
-          </>
+          </div>
         ))}
       </div>
-    </>
+
   );
 };
 
-export default Input1;
+export default Inputs;

@@ -9,8 +9,6 @@ const Categories = () => {
       .then((res) => {
         setCategorias(res.data.category);
         setsubCategorias(res.data.category[0].subCategorys);
-        console.log("holaaa");
-        console.log(res.data.category[0]);
       })
       .catch((err) => {
         console.log(err);
@@ -20,13 +18,13 @@ const Categories = () => {
   const CategoryName = (
     <ul>
       {categorias.map((categoria) => (
-        <li key={categoria.id}>{categoria.category}</li>
+        <li key={categoria.category}>{categoria.category}</li>
       ))}
     </ul>
   );
 
   const SubCategoryName = subcategorias.map((subCategoria) => (
-    <div key={subCategoria.id}>
+    <div key={subCategoria._id}>
       <h3>{subCategoria.subCategory}</h3>
     </div>
   ));

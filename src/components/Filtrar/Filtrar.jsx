@@ -8,10 +8,10 @@ const Filtrar = () => {
   return (
     <Container className="category">
       <Container className="filtrar">
-        <div>
+        <div key="hola">
           <Inputs />
-          <Inputs /> 
-          <Inputs />
+          {/* <Inputs /> 
+          <Inputs /> */}
         </div>
       </Container>
       <Container className="categories">
