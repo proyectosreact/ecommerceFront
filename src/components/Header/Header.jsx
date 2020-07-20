@@ -5,8 +5,9 @@ import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import logo from '../../assets/img/logo.png'
 import Image from 'react-bootstrap/Image'
+
 // import {Link} from 'react-router-dom'
-const Header = () => {
+const Header = ({email}) => {
     return ( 
         <>
         <header>
@@ -25,8 +26,9 @@ const Header = () => {
                     </Nav.Link>
                     <Nav.Link href="#deets" className="navbar__sign"><i className="gg-user"></i></Nav.Link>
                     <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
+                    {email}
                     </Nav.Link>
+                    
 
                     <Nav.Link >More deets</Nav.Link>
                 </Nav>
