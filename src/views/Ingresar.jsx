@@ -37,6 +37,8 @@ const Ingresar = ({history}) => {
             console.log(user.email);
             setLoggedIn(true)
             // history.push('/')
+            localStorage.setItem('email',user.email)
+            localStorage.setItem('token',JSON.stringify(res.data))
         }).catch(e => {
             console.log('usuario no existe ');
         })

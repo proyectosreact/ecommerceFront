@@ -10,8 +10,20 @@ import Header from '../components/Header/Header'
 import Menu from '../components/Nav/Nav'
 
 
-const  Home = ({email}) => {
+
+const  Home = () => {
     // const[email,setEmail]=useState(this.props.location.state && this.props.location.state.referrer)
+
+// import Nav from 'react-bootstrap/Nav'
+// import {
+//     BrowserRouter as Router,
+//     Switch,
+//     Route,
+//     Link,
+//   } from "react-router-dom";
+
+const email = localStorage.getItem('email')
+const token = localStorage.getItem('token')
     return ( 
         <>
         <Header ></Header>
@@ -46,7 +58,7 @@ const  Home = ({email}) => {
                     <Card className="cards__card">
                         <Card.Img  src={zapatilla}/>
                         <Card.Body className="cards__body">
-                            <Card.Title>Moda Mujer</Card.Title>
+                            <Card.Title>Moda</Card.Title>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -54,7 +66,7 @@ const  Home = ({email}) => {
                     <Card className="cards__card">
                         <Card.Img  src={zapatilla}/>
                         <Card.Body className="cards__body">
-                            <Card.Title>{email}</Card.Title>
+                            <Card.Title>Moda </Card.Title>
                         </Card.Body>
                     </Card>
                 </Col >
@@ -85,9 +97,7 @@ const  Home = ({email}) => {
 
             </Row>
         </Container>
-        {/* <Footer></Footer> */}
         </>
      );
 }
- 
 export default Home;

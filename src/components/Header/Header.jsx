@@ -12,7 +12,7 @@ const Header = ({email}) => {
         <>
         <header>
         <Navbar collapseOnSelect expand="lg" className="navbar">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
                 <Image src={logo} className="navbar__image"></Image>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
