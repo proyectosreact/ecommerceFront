@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/"><Home ></Home></Route>
-          <Route path="/category"><Category></Category></Route>
+          <Route exact path="/category/:id"><Category></Category></Route>
           <Route path="/admin/category"><AdminCategory></AdminCategory></Route>
           <Route path="/product"> <Product></Product> </Route>
           <Route path="/ingresar" component={Ingresar} />

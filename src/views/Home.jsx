@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import Carousel  from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
@@ -8,7 +8,8 @@ import slide from '../assets/img/slide.png'
 import zapatilla from '../assets/img/zapatilla.png'
 import Header from '../components/Header/Header'
 import Menu from '../components/Nav/Nav'
-
+import Axios from '../config/axios'
+import Categories from '../components/Categories/Categories'
 
 
 const  Home = () => {
@@ -22,8 +23,23 @@ const  Home = () => {
 //     Link,
 //   } from "react-router-dom";
 
-const email = localStorage.getItem('email')
-const token = localStorage.getItem('token')
+const [categorias, setCategorias] = useState([]);
+
+
+useEffect(() => {
+  Axios.get('/api/category',categorias)
+    .then((res) => {
+      setCategorias(res.data.category);
+
+      
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}, []);
+
+// const email = localStorage.getItem('email')
+// const token = localStorage.getItem('token')
     return ( 
         <>
         <Header ></Header>
@@ -51,18 +67,30 @@ const token = localStorage.getItem('token')
             />
             </Carousel.Item>
         </Carousel>
+
         <Container className="cards">
         <h1 className="cards__title">Categorias</h1>
             <Row>
-                <Col xs={12} sm={4} md={4} lg={4}>
-                    <Card className="cards__card">
-                        <Card.Img  src={zapatilla}/>
-                        <Card.Body className="cards__body">
-                            <Card.Title>Moda</Card.Title>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col xs={12} sm={4} md={4} lg={4} >
+                {/* {
+                categories.map(categories => (
+
+                ))
+                } */}
+                {
+                 categorias.map((categorias) => (
+            //   <li key={categorias.category}>
+            //     <h2 key={categorias.category}>{categorias.category}</h2> 
+            //     <h2 key={categorias.subCategorys}>{categorias.subCategorys[0].subCategory}</h2> 
+            //     {/* <h2 >{categorias.category.subCategorys.subCategory}</h2> */}
+            //   </li>
+                <Categories key={categorias._id}
+                categorias ={categorias}></Categories>
+                ))
+                }
+                
+
+
+                {/* <Col xs={12} sm={4} md={4} lg={4} >
                     <Card className="cards__card">
                         <Card.Img  src={zapatilla}/>
                         <Card.Body className="cards__body">
@@ -93,7 +121,7 @@ const token = localStorage.getItem('token')
                             <Card.Title>Maquinas</Card.Title>
                         </Card.Body>
                     </Card>
-                </Col>
+                </Col> */}
 
             </Row>
         </Container>
