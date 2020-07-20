@@ -18,7 +18,7 @@ function App() {
         <Switch>
           <Route exact path="/"><Home ></Home></Route>
           <Route exact path="/category/:id"><Category></Category></Route>
-          <Route path="/admin/category"><AdminCategory></AdminCategory></Route>
+          <Route path="/adminCategory"><AdminCategory></AdminCategory></Route>
           <Route path="/product"> <Product></Product> </Route>
           <Route path="/ingresar" component={Ingresar} />
           <Route path="/registrar" component={Registrar} />
