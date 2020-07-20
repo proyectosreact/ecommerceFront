@@ -19,11 +19,6 @@ const Menu = () => {
     <>
       <Nav defaultActiveKey="/category" as="ul">
         <Nav.Item as="li">
-          <Nav.Link href="/" className="nav__link">
-            Moda Mujer
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item as="li">
           {CategoryTitle.map((categoria) => (
             <NavLink
               to={`/category/${categoria.category}`}
@@ -34,19 +29,6 @@ const Menu = () => {
               {categoria.category}
             </NavLink>
           ))}
-        </Nav.Item>
-        <Nav.Item as="li">
-          <Nav.Link className="nav__link">Moda Niño</Nav.Link>
-        </Nav.Item>
-        <Nav.Item as="li">
-          <Nav.Link eventKey="link-2" className="nav__link">
-            Accesorios
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item as="li">
-          <Nav.Link eventKey="link-2" className="nav__link">
-            Maquinas
-          </Nav.Link>
         </Nav.Item>
       </Nav>
     </>

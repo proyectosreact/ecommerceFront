@@ -10,12 +10,10 @@ const Filtrar = () => {
       <Container className="filtrar">
         <div key="hola">
           <Inputs />
-          {/* <Inputs /> 
-          <Inputs /> */}
         </div>
       </Container>
       <Container className="categories">
-            <Categories />
+   <Categories />
       </Container>
     </Container>
   );

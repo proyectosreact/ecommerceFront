@@ -77,6 +77,9 @@
   color: white;
   margin: 0;
 }
+.nav-item{
+  display: flex;
+}
 /* //////////////////////// */
 /* Esitlos de los cards */
 .cards {
@@ -192,6 +195,7 @@ a:hover{
   display: flex;
   align-items: center;
   position: relative;
+  margin-top: 42px;
 }
 .principalInput > .input__title {
   font-style: normal;
