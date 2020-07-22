@@ -52,39 +52,6 @@ const Home = () => {
               </Link>
             </Col>
           ))}
-
-          <Col xs={12} sm={4} md={4} lg={4}>
-            <Card className="cards__card">
-              <Card.Img src={zapatilla} />
-              <Card.Body className="cards__body">
-                <Card.Title>Moda Mujer</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} sm={4} md={4} lg={4}>
-            <Card className="cards__card">
-              <Card.Img variant="top" src={zapatilla} />
-              <Card.Body className="cards__body">
-                <Card.Title>Moda Niño</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} sm={4} md={4} lg={4}>
-            <Card className="cards__card">
-              <Card.Img variant="top" src={zapatilla} />
-              <Card.Body className="cards__body">
-                <Card.Title>Accesorios</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} sm={4} md={4} lg={4}>
-            <Card className="cards__card">
-              <Card.Img variant="top" src={zapatilla} />
-              <Card.Body className="cards__body">
-                <Card.Title>Maquinas</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
         </Row>
       </Container>
       {/* <Footer></Footer> */}
