@@ -11,6 +11,7 @@ import Product from './views/Product';
 import AdminCategory from './views/AdminCategory';
 import Ingresar from './views/Ingresar' 
 import Registrar from './views/Registrar'
+import Pedidos from './views/Pedidos'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/product"> <Product></Product> </Route>
           <Route path="/ingresar" component={Ingresar} />
           <Route path="/registrar" component={Registrar} />
+          <Route path="/pedidos"> <Pedidos></Pedidos> </Route>
         </Switch>
       </Router>
 

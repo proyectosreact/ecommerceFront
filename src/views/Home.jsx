@@ -31,6 +31,7 @@ useEffect(() => {
   Axios.get('/api/category',categorias)
     .then((res) => {
       setCategorias(res.data.data);
+      console.log(res.data.data)
 
       
     })

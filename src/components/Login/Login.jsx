@@ -13,18 +13,18 @@ const Login = (props) => {
         <FontAwesomeIcon className="close-btn" icon={faTimesCircle} size="2x" />
         </Link>
         <Media>
-        <Container >
+        <Container className="login">
         <Image src={logo} ></Image>
          <Row className="justify-content-md-center mb-3"> 
-          <div className="nav-item">                 
-            <Link to="/ingresar" className="p-0">
-                <Button variant="outline-primary w-100 ico-login" size="lg">
+          <div className="iconos__login">                 
+            <Link to="/ingresar" >
+                <Button variant="outline-primary  "  className="icono__login">
                 <FontAwesomeIcon icon={faCircleNotch} size="lg" className="mr-3"/>
                 Ingresar
                 </Button>
             </Link>
-            <Link to="/registrar" className="p-0">
-                <Button variant="outline-primary w-100 ico-login" size="lg">
+            <Link to="/registrar" >
+                <Button variant="outline-primary"  className="icono__login">
                 <FontAwesomeIcon icon={faCircleNotch} size="lg" className="mr-3 font-weight-bold"/>
                 Registrar            
                 </Button>

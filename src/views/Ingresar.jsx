@@ -67,6 +67,7 @@ const Ingresar = ({history}) => {
                     type="email"
                     name="email"
                     onChange={onChangeData}
+                    className="input__login"
                      />
                 </Form.Group>
 
@@ -86,7 +87,7 @@ const Ingresar = ({history}) => {
                 type="submit" 
                 block 
                 size="lg"
-                // disabled={isLoading}
+                className="button__login"
                 // onClick={!isLoading ? handleClick : null}
                 >
                 {/* // {isLoading ? 'Cargando…' : 'Iniciar seccion'} */}
