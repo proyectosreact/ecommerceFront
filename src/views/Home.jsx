@@ -30,7 +30,8 @@ const [categorias, setCategorias] = useState([]);
 useEffect(() => {
   Axios.get('/api/category',categorias)
     .then((res) => {
-      setCategorias(res.data.category);
+      setCategorias(res.data.data);
+
 
       
     })
