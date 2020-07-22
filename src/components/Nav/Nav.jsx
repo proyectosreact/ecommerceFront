@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import Nav from "react-bootstrap/Nav";
@@ -20,7 +19,7 @@ const Menu = () => {
     <>
       <Nav defaultActiveKey="/category" as="ul">
         <Nav.Item as="li">
-          {CategoryTitle.map((categoria) => (
+          {/* {CategoryTitle.map((categoria) => (
             <NavLink
               to={`/category/${categoria.category}`}
               key={categoria.category}
@@ -29,7 +28,7 @@ const Menu = () => {
             >
               {categoria.category}
             </NavLink>
-          ))}
+          ))} */}
         </Nav.Item>
       </Nav>
     </>

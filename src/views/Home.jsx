@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     Axios.get("https://thawing-fortress-96804.herokuapp.com/api/category")
       .then((res) => {
-        setCategoryTitle(res.data.category[0]);
+        setCategoryTitle(res.data.category);
       })
       .catch((err) => {
         console.log(err);
@@ -40,20 +40,51 @@ const Home = () => {
       <Container className="cards">
         <h1 className="cards__title">Categorias</h1>
         <Row>
-          {
-          // CategoryTitle.map((categoria) => (
-          //   <Col xs={12} sm={4} md={4} lg={4} key={categoria.id}>
-          //     <Link to={`/category/${categoria.category}`}>
-          //       <Card className="cards__card">
-          //         <Card.Img src={zapatilla} />
-          //         <Card.Body className="cards__body">
-          //           <Card.Title>{categoria.category}</Card.Title>
-          //         </Card.Body>
-          //       </Card>
-          //     </Link>
-          //   </Col>
-          // ))
-          }
+          {/* {CategoryTitle.map((categoria) => (
+            <Col xs={12} sm={4} md={4} lg={4} key={categoria.id}>
+              <Link to={`/category/${categoria.category}`}>
+                <Card className="cards__card">
+                  <Card.Img src={zapatilla} />
+                  <Card.Body className="cards__body">
+                    <Card.Title>{categoria.category}</Card.Title>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+          ))} */}
+
+          <Col xs={12} sm={4} md={4} lg={4}>
+            <Card className="cards__card">
+              <Card.Img src={zapatilla} />
+              <Card.Body className="cards__body">
+                <Card.Title>Moda Mujer</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} sm={4} md={4} lg={4}>
+            <Card className="cards__card">
+              <Card.Img variant="top" src={zapatilla} />
+              <Card.Body className="cards__body">
+                <Card.Title>Moda Niño</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} sm={4} md={4} lg={4}>
+            <Card className="cards__card">
+              <Card.Img variant="top" src={zapatilla} />
+              <Card.Body className="cards__body">
+                <Card.Title>Accesorios</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} sm={4} md={4} lg={4}>
+            <Card className="cards__card">
+              <Card.Img variant="top" src={zapatilla} />
+              <Card.Body className="cards__body">
+                <Card.Title>Maquinas</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
       </Container>
       {/* <Footer></Footer> */}
