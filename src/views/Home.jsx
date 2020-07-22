@@ -9,6 +9,7 @@ import slide from '../assets/img/slide.png'
 import zapatilla from '../assets/img/zapatilla.png'
 import Header from '../components/Header/Header'
 import Menu from '../components/Nav/Nav'
+import Footer from '../components/Footer/Footer'
 import Axios from '../config/axios'
 import Categories from '../components/Categories/Categories'
 
@@ -127,6 +128,7 @@ useEffect(() => {
 
             </Row>
         </Container>
+        <Footer></Footer>
         </>
      );
 }

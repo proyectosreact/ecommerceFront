@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header/Header'
 import Menu from '../components/Nav/Nav'
+import Footer from '../components/Footer/Footer'
 import Container from 'react-bootstrap/Container'
 import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
@@ -51,6 +52,7 @@ const  Product  = () => {
         </Row>
     </Container>
     </Media>
+    <Footer></Footer>
     </>
     );
 }
