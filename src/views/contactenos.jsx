@@ -4,6 +4,8 @@ import Menu from '../components/Nav/Nav'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Button from 'react-bootstrap/Button'
+
 import "../assets/css/main.css";
 import Form from 'react-bootstrap/Form'
 
@@ -12,7 +14,7 @@ const Contact = () => {
         <>
             <Header></Header>
             <Menu></Menu>
-            <Container>
+            <Container className="form__container">
                 <Row className="Row_colum">
                     <h2 className="Contactenos_label">Contactenos</h2>
 
@@ -76,6 +78,12 @@ const Contact = () => {
                                 placeholder="Apartment, studio, or floor"
                             />
                         </Form.Group>
+                        <Container className="form__container">
+                            <Button variant="success" type="submit">
+                                Enviar
+                            </Button>
+                        </Container>
+
                     </Form>
                     {/* <button>
   <strong>Enviar</strong>
