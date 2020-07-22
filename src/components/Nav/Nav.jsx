@@ -6,9 +6,9 @@ import { NavLink } from "react-router-dom";
 const Menu = () => {
   const [CategoryTitle, setCategoryTitle] = useState([]);
   useEffect(() => {
-    Axios.get("https://thawing-fortress-96804.herokuapp.com/api/category")
+    Axios.get("https://thawing-fortress-96804.herokuapp.com/api/category",CategoryTitle)
       .then((res) => {
-        setCategoryTitle(res.data.category);
+        setCategoryTitle(res.data.data);
       })
       .catch((err) => {
         console.log(err);
@@ -19,7 +19,12 @@ const Menu = () => {
     <>
       <Nav defaultActiveKey="/category" as="ul">
         <Nav.Item as="li">
+
           {/* {CategoryTitle.map((categoria) => (
+
+          {
+          CategoryTitle.map((categoria) => (
+>>>>>>> feature-qgerardo
             <NavLink
               to={`/category/${categoria.category}`}
               key={categoria.category}
@@ -28,7 +33,12 @@ const Menu = () => {
             >
               {categoria.category}
             </NavLink>
+<<<<<<< HEAD
           ))} */}
+
+        
+
+
         </Nav.Item>
       </Nav>
     </>

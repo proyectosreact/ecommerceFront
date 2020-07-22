@@ -4,9 +4,13 @@ import Card from 'react-bootstrap/Card'
 import { Link } from 'react-router-dom';
 import producto from '../../assets/img/producto.png'
 const Categories = ({categorias}) => {
-    const {_id,category}= categorias
-    console.log(_id);
-
+    const {_id,category,createdAt,subCategorys}= categorias
+    
+ const subca = () =>{
+     return subCategorys.map(subcategory =>{
+         console.log(subcategory.subCategory);
+     })
+ }
     return ( 
         <>
         
@@ -16,6 +20,8 @@ const Categories = ({categorias}) => {
             <Card.Img src={producto}/>
             <Card.Body className="cards__body">
             <Card.Title >{category}</Card.Title>
+            <Card.Title >{createdAt}</Card.Title>
+            <button onClick={subca}></button>
             </Card.Body>
         </Card>
         </Link>

@@ -12,9 +12,7 @@ const Inputs = () => {
   useEffect(() => {
     Axios.get("https://thawing-fortress-96804.herokuapp.com/api/category")
       .then((res) => {
-        setCategorias(res.data.category);
-        setsubCategorias(res.data.category[0].subCategorys);
-        console.log(res.data.category[0]);
+        setCategorias(res.data.data);
       })
       .catch((err) => {
         console.log(err);
@@ -37,7 +35,7 @@ const Inputs = () => {
                 {categorias.category}
               </label>
             </Row>
-            {subcategorias.map((subcategorias) => (
+            {/* {subcategorias.map((subcategorias) => (
               <div key={subcategorias._id}>
                 <input
                   type="radio"
@@ -52,7 +50,7 @@ const Inputs = () => {
                   </label>
                 </Row>
               </div>
-            ))}
+            ))} */}
           </div>
         ))}
       </div>
