@@ -16,7 +16,8 @@ const Home = () => {
   useEffect(() => {
     Axios.get("https://thawing-fortress-96804.herokuapp.com/api/category")
       .then((res) => {
-        setCategoryTitle(res.data.category);
+        setCategoryTitle(res.data.category[0]);
+        console.log(CategoryTitle)
       })
       .catch((err) => {
         console.log(err);
