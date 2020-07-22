@@ -30,7 +30,7 @@ const [categorias, setCategorias] = useState([]);
 useEffect(() => {
   Axios.get('/api/category',categorias)
     .then((res) => {
-      setCategorias(res.data.category);
+      setCategorias(res.data.data);
 
       
     })
@@ -72,57 +72,12 @@ useEffect(() => {
         <Container className="cards">
         <h1 className="cards__title">Categorias</h1>
             <Row>
-                {/* {
-                categories.map(categories => (
-
-                ))
-                } */}
                 {
                  categorias.map((categorias) => (
-            //   <li key={categorias.category}>
-            //     <h2 key={categorias.category}>{categorias.category}</h2> 
-            //     <h2 key={categorias.subCategorys}>{categorias.subCategorys[0].subCategory}</h2> 
-            //     {/* <h2 >{categorias.category.subCategorys.subCategory}</h2> */}
-            //   </li>
                 <Categories key={categorias._id}
                 categorias ={categorias}></Categories>
                 ))
                 }
-                
-
-
-                {/* <Col xs={12} sm={4} md={4} lg={4} >
-                    <Card className="cards__card">
-                        <Card.Img  src={zapatilla}/>
-                        <Card.Body className="cards__body">
-                            <Card.Title>Moda </Card.Title>
-                        </Card.Body>
-                    </Card>
-                </Col >
-                <Col xs={12} sm={4} md={4} lg={4}>
-                    <Card className="cards__card">
-                        <Card.Img variant="top" src={zapatilla} />
-                        <Card.Body className="cards__body">
-                            <Card.Title>Moda Niño</Card.Title>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                 <Col xs={12} sm={4} md={4} lg={4}>
-                    <Card className="cards__card">
-                        <Card.Img variant="top" src={zapatilla} />
-                        <Card.Body className="cards__body">
-                            <Card.Title>Accesorios</Card.Title>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col xs={12} sm={4} md={4} lg={4}>
-                    <Card className="cards__card">
-                        <Card.Img variant="top" src={zapatilla} />
-                        <Card.Body className="cards__body">
-                            <Card.Title>Maquinas</Card.Title>
-                        </Card.Body>
-                    </Card>
-                </Col> */}
 
             </Row>
         </Container>

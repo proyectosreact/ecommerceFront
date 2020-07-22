@@ -12,9 +12,7 @@ const Filtrar = () => {
   useEffect(() => {
     Axios.get('/api/category',categorias)
       .then((res) => {
-        setCategorias(res.data.category);
-        console.log(res.data.category);
-        console.log(res.data.category[0].subCategorys[0].subCategory)
+        setCategorias(res.data.data);
         
       })
       .catch((err) => {

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import producto from '../../assets/img/producto.png'
 const Categories = ({categorias}) => {
     const {_id,category}= categorias
-    console.log(_id);
+    
 
     return ( 
         <>
