@@ -1,18 +1,19 @@
-import React from 'react'
-import Header from '../components/Header/Header'
-import Menu from '../components/Nav/Nav'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card'
-import Dropdown from 'react-bootstrap/Dropdown'
-import DropdownButton from 'react-bootstrap/DropdownButton'
-import producto from '../assets/img/producto.png'
+import React from "react";
+import Header from "../components/Header/Header";
+import Menu from "../components/Nav/Nav";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import producto from "../assets/img/producto.png";
+import Filtrar from '../components/Filtrar/Filtrar'
 
 const Category = () => {
     return ( 
         <>
-        <Header></Header>
+         <Header></Header>
         <Menu></Menu>
         <Container >
             <Row lg={6} className="filter">
@@ -84,10 +85,11 @@ const Category = () => {
                     </Card>
                 </Col >
             </Row>
-        </Container>
+          </Container>
+      <Filtrar />
         
-        </>
-     );
-}
- 
+      </>
+  );
+};
+
 export default Category;

@@ -5,7 +5,9 @@ import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import logo from '../../assets/img/logo.png'
 import Image from 'react-bootstrap/Image'
-const Header = () => {
+
+// import {Link} from 'react-router-dom'
+const Header = ({email}) => {
     return ( 
         <>
         <header>
@@ -19,13 +21,15 @@ const Header = () => {
                     <Nav.Link>
                         <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2 navbar__search" />
-                        <i class="gg-search"></i>
+                        <i className="gg-search"></i>
                         </Form>
                     </Nav.Link>
-                    <Nav.Link href="#deets" className="navbar__sign"><i class="gg-user"></i></Nav.Link>
+                    <Nav.Link href="#deets" className="navbar__sign"><i className="gg-user"></i></Nav.Link>
                     <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
+                    {email}
                     </Nav.Link>
+                    
+
                     <Nav.Link >More deets</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
