@@ -458,12 +458,13 @@ a:hover{
 /* //////////////////////// */
 /* Estilos de Admin Category */
 .title_categorias{
-  margin: 20px;
+  margin: 40px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
+  text-align: center;
 
   color: #000000;
 }
@@ -603,8 +604,15 @@ a:hover{
     background: #FF5C5C;
     border-radius: 4px;
 }
+
+.container{
+  padding: 0px;
+}
+.col{
+  padding: 0px;
+}
 /* //////////////////////// */
-/* Estilos de Productos */
+/* Estilos de Pedidos */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .Pedidos_card_header{
