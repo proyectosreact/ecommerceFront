@@ -752,3 +752,10 @@ a:hover{
 
   color: #FFFFFF;
 }
+.accordion > .card > .card-header{
+  margin-bottom: 0px;
+}
+
+.accordion > .card:not(:last-of-type){
+  border-radius: .25rem;
+}
