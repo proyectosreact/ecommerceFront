@@ -77,17 +77,17 @@ useEffect(() => {
 
                 ))
                 } */}
-                {
+                {/*
                  categorias.map((categorias) => (
             //   <li key={categorias.category}>
             //     <h2 key={categorias.category}>{categorias.category}</h2> 
             //     <h2 key={categorias.subCategorys}>{categorias.subCategorys[0].subCategory}</h2> 
             //     {/* <h2 >{categorias.category.subCategorys.subCategory}</h2> */}
-            //   </li>
+            {/*    //   </li>
                 <Categories key={categorias._id}
                 categorias ={categorias}></Categories>
                 ))
-                }
+                }*/}
                 
 
 
