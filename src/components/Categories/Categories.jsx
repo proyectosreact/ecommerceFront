@@ -20,7 +20,7 @@ const Categories = ({categorias}) => {
             <Card.Img src={producto}/>
             <Card.Body className="cards__body">
             <Card.Title >{category}</Card.Title>
-            <Card.Title >{createdAt}</Card.Title>
+            <Card.Title >{}</Card.Title>
             <button onClick={subca}></button>
             </Card.Body>
         </Card>
