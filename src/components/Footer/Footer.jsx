@@ -3,23 +3,20 @@ import '../../assets/css/main.css'
 import Container from 'react-bootstrap/Container'
 import Image from 'react-bootstrap/Image'
 import Col from 'react-bootstrap/Col'
-import Row from "react-bootstrap/Row";
-import logo from '../../assets/img/logo.png'
+import Row from "react-bootstrap/Row"
+import Card from 'react-bootstrap/Card'
+import Logo from '../../assets/img/logo.png'
 const footer = () => {
     return(
         <>
         <footer>
-        <Container fluid className="footer_container">
-            <Row className="footer_logo">
-                <Col >
-                    <Image src={logo} />
-                </Col>
-            </Row>
-            <Row>
-                <Col >
-                <h3 className="footer_derechos">TODOS LOS DERECHOS RESERVADOS</h3>
-                </Col>
-            </Row>
+        <Container fluid>
+            <Card className="text-white footer_container">
+                    <Card.Title><Image src={Logo} rounded /></Card.Title>
+                    <Card.Text className="footer_derechos">
+                        Todos los derechos reservados
+                    </Card.Text>
+            </Card>
         </Container>
         </footer>
         </>
