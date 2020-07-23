@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Row } from "react-bootstrap";
-import Axios from "../../config/axios";
 
 const Inputs = ({ categorias }) => {
-  // ------------ Get Categorys in Hooks ----------
-  // const [categorias, setCategorias] = useState([]);
-  // const [subcategorias, setsubCategorias] = useState([]);
-  // --------------Toggle className---------------
+
   const [condition, setCondition] = React.useState(null);
-  // -----------------AXIOS get-------------------
-  const { _id, category, createdAt, subCategorys } = categorias;
+  const { _id, subCategorys } = categorias;
 
   return (
 
