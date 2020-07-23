@@ -315,4 +315,5 @@ function CustomToggle({ children, eventKey }) {
         </>
     );
 }
+
 export default Pedidos;

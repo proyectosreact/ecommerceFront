@@ -13,6 +13,9 @@ const Inputs = () => {
     Axios.get("https://thawing-fortress-96804.herokuapp.com/api/category")
       .then((res) => {
         setCategorias(res.data.data);
+        console.log(res.data.data);
+        // setsubCategorias(res.data.category[0].subCategorys);
+
       })
       .catch((err) => {
         console.log(err);
