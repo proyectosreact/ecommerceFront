@@ -1,11 +1,11 @@
 import React,{useState, useEffect} from 'react';
 import Carousel  from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container'
-import Card from 'react-bootstrap/Card'
+// import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+// import Col from 'react-bootstrap/Col'
 import slide from '../assets/img/slide.png'
-import zapatilla from '../assets/img/zapatilla.png'
+// import zapatilla from '../assets/img/zapatilla.png'
 import Header from '../components/Header/Header'
 import Menu from '../components/Nav/Nav'
 import Axios from '../config/axios'
@@ -37,7 +37,7 @@ useEffect(() => {
     .catch((err) => {
       console.log(err);
     });
-}, []);
+},[]);
 
 // const email = localStorage.getItem('email')
 // const token = localStorage.getItem('token')

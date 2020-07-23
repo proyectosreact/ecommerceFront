@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from "react-router-dom";
 import Home from './views/Home';
 import Category from './views/Category';
@@ -29,7 +28,6 @@ function App() {
 
         </Switch>
       </Router>
-
 
   );
 }

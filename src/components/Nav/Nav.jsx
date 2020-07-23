@@ -19,12 +19,8 @@ const Menu = () => {
     <>
       <Nav defaultActiveKey="/category" as="ul">
         <Nav.Item as="li">
-
-          {/* {CategoryTitle.map((categoria) => (
-
           {
           CategoryTitle.map((categoria) => (
->>>>>>> feature-qgerardo
             <NavLink
               to={`/category/${categoria.category}`}
               key={categoria.category}
@@ -33,16 +29,11 @@ const Menu = () => {
             >
               {categoria.category}
             </NavLink>
-<<<<<<< HEAD
-          ))} */}
-
-        
-
-
+          ))
+          }
         </Nav.Item>
       </Nav>
     </>
   );
 };
-
 export default Menu;
