@@ -7,6 +7,7 @@ import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import producto from '../assets/img/producto_cuadro.png'
+
 import "../assets/css/main.css"
 
 import Media from 'react-bootstrap/Media'
@@ -19,17 +20,21 @@ const  Product  = () => {
         <Row className="Row_colum">
         <h2 className="gris_product_tittle">Zapatillas Mujer</h2>
         <h2 className="color_product_tittle">/ Adidas Sport - Shakira</h2>
+
         </Row>
     </Container>
 
     <Media>
+
     <Container className="container_center">
         <Row xs={2} md={2} sm={2} className="containerP_margin">
+
             <Col className="margin_foto">
             <Image src={producto} rouded fluid/>
             </Col>
             <Media.Body>
             <Col >
+
             <h3 className="name_product">Adidas Sport - Shakira</h3>
             </Col>
             <Col>

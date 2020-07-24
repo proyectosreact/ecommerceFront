@@ -337,5 +337,4 @@ const  AdminCategory = () =>{
         </>
         );
 }
-
 export default AdminCategory;
