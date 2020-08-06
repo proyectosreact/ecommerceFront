@@ -21,24 +21,13 @@ const Filtrar = () => {
 
   return (
     <Container className="category">
+      <h1>Filtro</h1>
       <Container className="filtrar">
-        <div key="hola">
+        <div>
           {categorias.map((categorias) => (
             <Inputs key={categorias._id} categorias={categorias} activado={activado} />
           ))}
-          
         </div>
-      </Container>
-      <Container className="categories">
-        <ul>
-          {categorias.map((categorias) => (
-            <li key={categorias.category}>
-              <h2 key={categorias.category}>{categorias.category}</h2>
-              {/* <h2 key={categorias.subCategorys}>{categorias.subCategorys[0].subCategory}</h2>  
-                 <h2 >{categorias.category.subCategorys.subCategory}</h2> */}
-            </li>
-          ))}
-        </ul>
       </Container>
     </Container>
   );

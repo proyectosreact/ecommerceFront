@@ -26,7 +26,6 @@ const Inputs = ({ categorias }) => {
          
        {subCategorys.map((subcategory) => (
             <div >
-
               <input
                 type="radio"
                 name="input__name"

@@ -15,7 +15,7 @@ function CustomToggle({ children, eventKey }) {
     );
   
     return (
-      <button type="button" onClick={decoratedOnClick} className="button_subcategoria">
+      <button type="button" onClick={decoratedOnClick} className="pedidos_button_historial">
         {children}
       </button>
     );
@@ -38,7 +38,7 @@ function CustomToggle({ children, eventKey }) {
                         <Row>
                            <Col md={8} > <h3 className="pedidos_identificador">N°2121212121 </h3> </Col>
                             <Col md={.5} className="pedidos_estado_ingresado"> <h4 className="pedidos_estado_text">INGRESADO</h4> </Col>
-                           <Col md={1}> <CustomToggle eventKey="0" className="pedidos_button_historial"><h4 className="pedidos_button_historial_text">HISTORIAL</h4></CustomToggle>  </Col>
+                           <Col md={1}> <CustomToggle eventKey="0"><h4 className="pedidos_button_historial_text">HISTORIAL</h4></CustomToggle>  </Col>
 
                         </Row>
                     </Card.Header>
@@ -244,7 +244,7 @@ function CustomToggle({ children, eventKey }) {
                     <Card.Header className="Pedidos_card_header">
                         <Row>
                            <Col md={8} > <h3 className="pedidos_identificador">N°2121212121 </h3> </Col>
-                            <Col md={.5} className="pedidos_estado_entregado"> <h4 className="pedidos_estado_text_white">EN PROCESO</h4> </Col>
+                            <Col md={.5} > <h4 className="pedidos_estado_entregado" >ENTREGADO</h4> </Col>
                            <Col md={1}> <CustomToggle eventKey="3" className="pedidos_button_historial"><h4 className="pedidos_button_historial_text">HISTORIAL</h4></CustomToggle>  </Col>
 
                         </Row>
@@ -315,5 +315,7 @@ function CustomToggle({ children, eventKey }) {
         </>
     );
 }
+
+
 
 export default Pedidos;

@@ -1,0 +1,49 @@
+/* /////login */
+/* .input__login {} */
+.input__login:focus {
+    border-color: #18ce94;
+    box-shadow: 0 0 0 0.1rem #18ce94;
+  }
+  .button__login {
+    background: #18ce94;
+    border: none;
+    box-shadow: none;
+  }
+  .button__login:hover {
+    cursor: pointer;
+    background: #18ce94;
+    border: none;
+    box-shadow: none;
+  }
+  .button__login:focus {
+    cursor: pointer;
+    background: #18ce94;
+    border: none;
+    box-shadow: none;
+  }
+  .button__login:active {
+    background: black;
+    border: none;
+    box-shadow: none;
+  }
+  .btn-primary:not(:disabled):not(.disabled):active:focus {
+    background: black;
+    border: none;
+    box-shadow: none;
+  }
+  .icono__login {
+    display: flex;
+    color: #18ce94;
+    border: 1px solid #18ce94;
+    padding: 7px;
+    margin: 10px;
+  }
+  .iconos__login {
+    border: 1px solid blue;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

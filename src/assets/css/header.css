@@ -1,0 +1,103 @@
+
+/* Estilos del header */
+.navbar {
+    background: black;
+    padding: 10px;
+  
+  }
+  .navbar__image {
+    width: 80%;
+    height: 80px;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+  }
+  .navbar-light .navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar__search{
+    margin-right: 5px;
+  }
+  .navbar__search-form {
+    background: #0000;
+    width: 85%;
+    margin-right: 20px !important;
+  }
+  
+  .gg-search {
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: -4px;
+    margin-top: -4px;
+  }
+  .gg-user {
+    color: white;
+    margin-right: 20px;
+    box-sizing: border-box;
+    width: 3px;
+    height: 18px;
+  }
+  .navbar__sign {
+    display: flex;
+    color: white;
+  }
+  .navbar__sign h6{
+    margin: 0 5px 4px 0;
+    
+  }
+  .navbar__sign:active {
+    display: flex;
+    color: white;
+  }
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
+    background: black;
+    border: 0;
+  }
+  .nav__carrito {
+    border-radius: 36px;
+    background-color: #18ce94;
+    padding: 13px 12px 13px 17px;
+    justify-content: space-evenly !important;
+    margin-right: 23px;
+  }
+  .nav__carrito h5 {
+    margin: 0;
+    font-size: 19px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-right: 13px;
+    line-height: 19px;
+  }
+  .carrito__number {
+    width: 19px;
+    border-radius: 12px;
+    color: #ffffff;
+    display: table;
+    background: #000000;
+    padding: 4px;
+    margin-left: 9px;
+  }
+  .carrito__number h4 {
+    font-size: 14px;
+    margin: 0 6px;
+  }
+  /* ///////////// */
