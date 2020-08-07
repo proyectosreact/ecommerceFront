@@ -12,7 +12,7 @@ const footer = () => {
         <footer>
         <Container fluid>
             <Card className="text-white footer_container">
-                    <Card.Title><Image src={Logo} rounded /></Card.Title>
+                    <Card.Title><Image src={Logo} fluid className="footer_logo"/></Card.Title>
                     <Card.Text className="footer_derechos">
                         Todos los derechos reservados
                     </Card.Text>
