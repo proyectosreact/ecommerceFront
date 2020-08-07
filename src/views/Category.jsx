@@ -39,7 +39,7 @@ const Category = () => {
                 </Container>
                 </Row>
                 </Container>
-                
+
       <Filtrar />
         
       </>
