@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Menu = () => {
   const [CategoryTitle, setCategoryTitle] = useState([]);
   useEffect(() => {
-    Axios.get("https://thawing-fortress-96804.herokuapp.com/api/category",CategoryTitle)
+    Axios.get("https://thawing-fortress-96804.herokuapp.com/api/category")
       .then((res) => {
         setCategoryTitle(res.data.data);
       })

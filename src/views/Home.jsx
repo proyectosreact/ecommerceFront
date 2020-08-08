@@ -26,13 +26,14 @@ const  Home = () => {
 const [categorias, setCategorias] = useState([]);
 
 
+
+
+
 useEffect(() => {
-  Axios.get('/api/category',categorias)
+  Axios.get('/api/category')
     .then((res) => {
       setCategorias(res.data.data);
       console.log(res.data.data)
-
-      
     })
     .catch((err) => {
       console.log(err);
@@ -44,7 +45,7 @@ useEffect(() => {
     return ( 
         <>
         <Header ></Header>
-        <Menu></Menu>
+        <Menu/>
         <Carousel interval="2000" indicators={false}>
             <Carousel.Item>
             <img

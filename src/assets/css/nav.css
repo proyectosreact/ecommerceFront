@@ -1,0 +1,31 @@
+/* Estilos del Menu */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__link {
+    font-size: 14px;
+    color: #858585;
+    margin: 0;
+  }
+  .nav__components input{
+    border-style: none;
+  }
+  
+  .nav__link:hover {
+    font-size: 14px;
+    background: #18ce94;
+    color: white;
+    margin: 0;
+  }
+  .nav__select {
+    font-size: 14px;
+    background: #18ce94;
+    color: white;
+    margin: 0;
+  }
+  .nav-item {
+    display: flex;
+  }
+  /* //////////////////////// */

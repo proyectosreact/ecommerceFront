@@ -1,0 +1,141 @@
+/* Estilos de Pedidos */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.Pedidos_card_header{
+    background-color: #FFFFFF;
+}
+.pedidos_cards{
+  margin-bottom: 30px;
+}
+.pedidos_identificador{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px;
+  color: #000000;
+}
+.pedidos_estado_ingresado{
+    width: 150px;
+    height: 44px;
+    background: #FF5C5C;
+    border-radius: 4px;
+}
+.pedidos_estado_facturado{
+  width: 150px;
+  height: 44px;
+  background: #9EFF00;
+  border-radius: 4px;
+}
+.pedidos_estado_enproceso{
+  width: 150px;
+  height: 44px;
+  background: #00B2FF;
+  border-radius: 4px;
+}
+.pedidos_estado_entregado{
+  background: #000000;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+.pedidos_estado_text{
+
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+
+
+}
+.pedidos_estado_text_white{
+  font-family: Roboto;
+  font-style: normal;
+  line-height: 26px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.pedidos_button_historial{
+    width: 175px;
+    height: 52px;
+    background: #18CE94;
+    border-radius: 4px;
+}
+.pedidos_button_historial_text{
+    width: 113px;
+    height: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+.pedidos_title{
+  text-align: center;
+  margin: 40px;
+}
+
+.desplegable_pedidos{
+  height: auto;
+}
+
+.table_pedidos{
+  width: 80%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  color: #000000;
+
+}
+.table_pedidos td{
+  padding: 5px;
+}
+.table_pedidos_estado{
+  width: 90%;
+  height: 50%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  margin-left: 25px;
+  color: #000000;
+}
+
+.table_pedidos_estado td{
+  padding: 0px;
+}
+
+.button_cambio_estado_pedidos{
+  width: 189px;
+  height: 42px;
+
+  background: #18CE94;
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #FFFFFF;
+}
+.accordion > .card > .card-header{
+  margin-bottom: 0px;
+}
+
+.accordion > .card:not(:last-of-type){
+  border-radius: .25rem;
+}

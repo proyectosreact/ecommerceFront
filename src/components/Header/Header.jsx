@@ -27,7 +27,7 @@ const Header = ({ email }) => {
                 <Form inline className="navbar__search">
                   <FormControl
                     type="text"
-                    placeholder="Search"
+                    placeholder="Buscar Producto"
                     className="mr-sm-2 navbar__search-form"
                   />
                   <i className="gg-search"></i>

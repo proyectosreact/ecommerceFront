@@ -6,10 +6,10 @@ import "../../assets/css/main.css";
 
 const Filtrar = () => {
   const [categorias, setCategorias] = useState([]);
-  const [activado, setActivado] = useState(false);
+
 
   useEffect(() => {
-    Axios.get("/api/category", categorias)
+    Axios.get("/api/category", )
       .then((res) => {
         setCategorias(res.data.data);
         console.log(res.data.data);
@@ -24,7 +24,7 @@ const Filtrar = () => {
       <Container className="filtrar">
         <div key="hola">
           {categorias.map((categorias) => (
-            <Inputs key={categorias._id} categorias={categorias} activado={activado} />
+            <Inputs key={categorias._id} categorias={categorias} />
           ))}
           
         </div>
